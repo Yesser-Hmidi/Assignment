@@ -1,0 +1,75 @@
+h1{
+    text-align: center;
+    font-size: 175%;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style:oblique;
+}
+
+div{
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    /*box-sizing: border-box;*/
+    margin: 0;
+    padding: 0;
+}
+.div1{
+    position:relative;
+    background-color: #808080;
+    border: 2px solid black;
+    height: fit-content;
+    margin: 15px;
+    margin-top: 50px;
+    float: left;
+}
+.div2{
+    position:absolute;
+    font-size: 125%;
+    background-color: #CD5C5C;
+    padding:  10px;
+    border: 2px solid black;
+    width:fit-content;
+    height: auto;
+    /*margin-top: 0%;
+    margin-right: 100%;*/
+    top: 0;
+    right:0;
+    
+}
+.div3{
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+}
+@media (min-width: 992px) {
+    .div1{
+        width: 30.33%;
+        margin-right: 1%;
+        margin-left: 1%;
+        float: left;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #d1,#d2{
+        width: 48%;
+        margin-right: 1%;
+        margin-left: 1%;
+        float: left;
+    }
+    #d3{
+        width: 98%;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+   
+  }
+  @media (max-width: 767px) {
+    .div1{
+        width: 98%;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+  }
+
