@@ -9,19 +9,28 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-nav">
     <header>
-    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
+      <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"> <h1>Food,LLC</h1></a>
-          <button class="navbar-toggler d-block d-lg-none d-block d-md-none d-block d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">            <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="nav-list" class="nav navbar-nav navbar-right d-block d-sm-none row">
-                <li class="li-Menu text-center">Chiken</li ><hr">
-                <li class="li-Menu text-center">Beef</li><hr">
-                <li class="li-Menu text-center">Sushi</li>
+            <ul class="nav navbar-nav d-block d-lg-none d-block d-md-none d-block d-sm-none w-100" id="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link li-Menu text-center" href="#chiken-div">Chicken</a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link li-Menu text-center" href="#beef-div">Beef</a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link li-Menu text-center" href="#sushi-div">Sushi</a>
+              </li>
+              <hr>
             </ul>
           </div>
         </div>
@@ -31,17 +40,25 @@
     <!--main content-->
     <div id="main-content" class="container">
         <h1 class="text-center">Our Menu</h1>
-        <div id="chiken-div" class="container">
-            <h2 class="text-center" id="chikenh1" >Chiken</h2>
-            <div id="lorem-div" class="text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, odio possimus? Praesentium, assumenda. Eum vel modi dignissimos culpa, at voluptate sed praesentium ullam sunt, laudantium perspiciatis inventore ipsa laboriosam nostrum!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt provident, voluptatum illum, nisi dignissimos repellat iure sapiente totam cumque hic quia saepe a deserunt. Magni, cumque? Architecto adipisci fugit recusandae.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quisquam maxime ratione accusantium totam. Autem odio dolorem facilis maxime, expedita error quia distinctio repellendus iste accusantium vitae laudantium nisi soluta.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque iste maxime eaque quisquam placeat reiciendis illum autem recusandae error, fuga, dolores enim dolorum magnam ipsum iusto! Alias, earum dicta?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere veritatis dolorum, culpa recusandae corporis natus accusantium reprehenderit fugit reiciendis eligendi velit impedit laboriosam deserunt voluptatibus consequatur. Animi, perspiciatis placeat.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit labore voluptatibus sapiente expedita vel facere ipsum pariatur dolorem possimus debitis quaerat ab, alias distinctio quisquam maxime voluptas maiores nam explicabo.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe deserunt dolor numquam ab quibusdam cupiditate voluptatum magnam ratione incidunt aliquam sit nulla iure quas, consequuntur voluptate quod. Porro, explicabo totam.
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="content-box" id="chiken-div">
+              <p class="item-name text-center" id="tilte-content">Chicken</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis eveniet quae dolores praesentium eos nihil accusantium debitis doloremque possimus unde quam laborum accusamus voluptates excepturi incidunt quos, nisi eum quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maiores, ex cum iure dolorem libero mollitia itaque nemo nostrum facere quisquam porro tempore provident enim et similique animi fuga debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatibus a animi totam. Assumenda, vel iste optio minima, porro excepturi mollitia, laboriosam exercitationem dolorem ex quae. Inventore error id molestiae.<a class="nav-link text-decoration-underline" href="#header-nav">Back to Top</a></p>
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="content-box" id="beef-div">
+              <p class="item-name text-center" id="tilte-content">Beef</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia, similique eius aut error omnis facere enim nihil accusamus harum. Ullam aspernatur pariatur maxime natus, ad voluptatum praesentium quo sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem distinctio ad ex hic expedita minima tenetur odio perspiciatis! Quo perferendis magnam neque rem earum harum? Voluptate nostrum beatae ut cupiditate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias obcaecati ipsa doloremque quam reiciendis laborum facilis, laboriosam, voluptate assumenda sint culpa officiis reprehenderit ducimus temporibus, commodi molestiae quia cum unde.<a class="nav-link text-decoration-underline" href="#header-nav">Back to Top</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12" >
+            <div class="content-box" id="sushi-div">
+              <p class="item-name text-center" id="tilte-content">Sushi</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequuntur tempore sequi voluptate? Placeat veritatis velit doloribus dolore dicta beatae quidem perspiciatis veniam sed. Est voluptates aut fugiat recusandae blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a odio ipsa architecto similique consequuntur dicta accusamus, itaque nemo incidunt. Similique a culpa sed labore tempore ex hic debitis sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae numquam iste nemo ullam aspernatur consectetur? Sed ea in, debitis praesentium quae, tempora nobis laborum, maxime fugit perferendis omnis quas. Ducimus.<a class="nav-link text-decoration-underline" href="#header-nav">Back to Top</a></p>
+            </div>
+          </div>
         </div>
     </div>
 </body>
